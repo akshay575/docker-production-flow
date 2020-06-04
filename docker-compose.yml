@@ -1,0 +1,16 @@
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - /frontend:/app
+    stdin_open: true
+
+# above is equivalent to:
+# $ docker build -f Dockerfile.dev .
+# $ docker run -itp 3000:3000 -v /app/node_modules -v //fronend://app
