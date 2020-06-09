@@ -1,0 +1,9 @@
+sudo: required  # requires super user access
+services:       # require docker
+  - docker
+
+before_install: # before run script below, run some commands
+  - docker build -t docker-react -f Dockerfile.dev .
+
+script:         # actual test command, -e is to set environment variable
+  - docker run -e CI=true npm run test
