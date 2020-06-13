@@ -13,7 +13,7 @@ deploy:         # deployment configuration
   provider: elasticbeanstalk
   region: "us-east-2"
   app: "docker-workflow"
-  env: "DockerWorkflow-env"
+  env: "DockerWorkflow-env-1"
   bucket_name: "elasticbeanstalk-us-east-2-190489204395"
   bucket_path: "docker-workflow"
   on:
