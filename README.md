@@ -1,3 +1,16 @@
+## Docker Workflow for Application Development Phase and Production Phase for Deployments
+
+![Screenshot](screenshot.gif)
+
+** Technology Stack: **
+
+* React
+* Docker multi-stage builds (development and production)
+* Travis CI (CI/CD for automated testing and deployments)
+* AWS Elasticbeanstalk (Runs docker container)
+* AWS S3 (File storage)
+* AWS IAM (Grants access to Travis CI)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
