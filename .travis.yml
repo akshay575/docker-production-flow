@@ -8,3 +8,16 @@ before_install: # before run script below, run some commands
 
 script:         # actual test command, -e is to set environment variable
   - docker run -e CI=true docker-workflow npm run test
+
+deploy:         # deployment configuration
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "docker-workflow"
+  env: "DockerWorkflow-env"
+  bucket_name: "elasticbeanstalk-us-east-2-190489204395"
+  bucket_path: "docker-workflow"
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: "$AWS_SECRET_KEY"
