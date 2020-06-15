@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot.gif)
 
-** Technology Stack: **
+**Technology Stack:**
 
 * React
 * Docker multi-stage builds (development and production)
