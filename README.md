@@ -1,4 +1,4 @@
-## Docker Workflow for Application Development Phase and Production Phase for Deployments
+## Docker Workflow for Application Development Phase and Production Phase
 
 ![Screenshot](screenshot.gif)
 
